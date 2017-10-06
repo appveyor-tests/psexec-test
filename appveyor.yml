@@ -2,4 +2,4 @@ build_script:
   - PowerShell -Command %APPVEYOR_BUILD_FOLDER%\hello.ps1
 
 test_script:
-  - psexec.exe -s PowerShell -ExecutionPolicy ByPass -Command %APPVEYOR_BUILD_FOLDER%\hello.ps1
+  - psexec.exe -s -accepteula PowerShell -ExecutionPolicy ByPass -Command %APPVEYOR_BUILD_FOLDER%\hello.ps1
